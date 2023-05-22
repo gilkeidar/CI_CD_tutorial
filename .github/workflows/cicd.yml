@@ -2,6 +2,33 @@ name: CI/CD
 run-name: ${{ github.actor }} is running the CI/CD pipeline
 on: [push, pull_request]
 jobs:
+  lint-action:
+    name: Lint using lint-action
+    runs-on: ubuntu-latest
+    
+    permissions:
+      checks: write
+      contents: write
+    
+    steps:
+      - name: Checkout Git Repository
+        uses: actions/checkout@v2
+        
+      # Install linters here
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+      
+      - name: Setup linters
+        run: npm init @eslint/config
+      
+      
+      - name: Run linters
+        uses: wearerequired/lint-action@v2
+        with:
+          # Enable your linters here
+          eslint: true
+      
+
   run-linter:
     # Name the job
     name: Lint Code Base
