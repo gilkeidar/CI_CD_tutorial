@@ -48,7 +48,7 @@ jobs:
           FILTER_REGEX_EXCLUDE: .*docs/.*
   create-documentation:
     name: Create JSDocs
-    #needs: lint-javascript
+    needs: lint-javascript
     runs-on: ubuntu-latest
     
     permissions:
