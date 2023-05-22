@@ -46,8 +46,6 @@ jobs:
       - name: Install Standard Style
         run: npm install standard --global
       - name: Run Standard Style
-        run: standard
-      - name: Fix errors
         run: standard --fix
         
     
