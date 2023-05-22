@@ -70,6 +70,7 @@ jobs:
           # See different templates here: https://cancerberosgx.github.io/jsdoc-templates-demo/demo/
           #template: jaguarjs-jsdoc
           template: clean-jsdoc-theme
+          front_page: README.md
           output_dir: ./docs
       - name: Commit files
         run: |
