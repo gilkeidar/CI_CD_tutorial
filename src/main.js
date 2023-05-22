@@ -13,3 +13,4 @@ const banaa2 = 2
 const banana3 = 3
 
 console.log(addTwoNumbers(banana, banaa2))
+console.log(banana3)
