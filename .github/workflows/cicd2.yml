@@ -42,8 +42,12 @@ jobs:
           VALIDATE_CSS: true
   create-documentation:
     name: Create JSDocs
-    needs: [lint-javascript, lint-html-css]
+    needs: lint-javascript
     runs-on: ubuntu-latest
+    
+    permissions:
+      # Lets this job push the docs to the repository
+      contents: write
     
     steps:
       - name: Checkout Code
@@ -54,7 +58,7 @@ jobs:
           source_dir: ./src
           recurse: true
           output_dir: ./out
-      - name: Deploy Documentation
+      - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         with:
           deploy_key: ${{ secrets.ACTIONS_DEPLOY_KEY }}
