@@ -42,7 +42,7 @@ jobs:
           VALIDATE_CSS: true
   create-documentation:
     name: Create JSDocs
-    needs: lint-javascript
+    #needs: lint-javascript
     runs-on: ubuntu-latest
     
     permissions:
