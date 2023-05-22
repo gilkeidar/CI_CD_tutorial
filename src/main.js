@@ -25,3 +25,4 @@ const banana3 = 3
 console.log(addTwoNumbers(banana, banaa2))
 console.log(multiplyTwoNumbers(banana, banana3))
 console.log(banana3)
+console.log('Hi')
