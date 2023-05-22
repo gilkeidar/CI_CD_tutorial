@@ -31,5 +31,23 @@ jobs:
           VALIDATE_JAVASCRIPT_STANDARD: true
           VALIDATE_HTML: true
           VALIDATE_CSS: true
+          
+  run-standard-js:
+    name: Lint JavaScript code using Standard Style
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+      - name: Install Node.js
+        uses: actions/setup-node@v3
+      - name: Install Standard Style
+        run: npm install standard -- global
+      - name: Run Standard Style
+        run: standard
+      - name: Fix errors
+        run: standard --fix
         
     
