@@ -2,18 +2,18 @@ name: CI/CD v2
 run-name: CI/CD v2 run
 on: [push, pull_request]
 jobs:
-  lint-javascript:
-    name: Lint JavaScript
-    runs-on: ubuntu-latest
-    
-    steps:
-      - name: Checkout Code
-        uses: actions/checkout@v3
-        with:
-          fetch-depth: 0
-      - name: Setup Node.js
-        uses: actions/setup-node@v3
-      - name: Install Standard Style
-        run: npm install standard --global
-      - name: Run Standard Styler linter
-        run: standard
+    lint-javascript:
+        name: Lint JavaScript
+        runs-on: ubuntu-latest
+
+        steps:
+            -   name: Checkout Code
+                uses: actions/checkout@v3
+                with:
+                    fetch-depth: 0
+            -   name: Setup Node.js
+                uses: actions/setup-node@v3
+            -   name: Install Standard Style
+                run: npm install standard --global
+            -   name: Run Standard Styler linter
+                run: standard
