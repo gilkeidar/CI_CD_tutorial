@@ -1,3 +1,5 @@
+# Optional - the name of the workflow as it will appear in the Actions tabs
+#   of the GitHub repository
 name: learn-github-actions
 run-name: ${{ github.actor }} is learning GitHub Actions
 on: [push]
