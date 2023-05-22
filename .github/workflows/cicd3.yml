@@ -67,7 +67,9 @@ jobs:
         with:
           source_dir: ./src
           recurse: true
-          template: jaguarjs-jsdoc
+          # See different templates here: https://cancerberosgx.github.io/jsdoc-templates-demo/demo/
+          #template: jaguarjs-jsdoc
+          template: clean-jsdoc-theme
           output_dir: ./docs
       - name: Commit files
         run: |
