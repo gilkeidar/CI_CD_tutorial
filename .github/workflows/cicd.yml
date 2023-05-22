@@ -19,7 +19,7 @@ jobs:
         uses: actions/setup-node@v3
       
       - name: Setup linters
-        run: npm init @eslint/config
+        run: npm ci
       
       
       - name: Run linters
