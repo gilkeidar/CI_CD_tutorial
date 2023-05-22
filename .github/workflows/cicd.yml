@@ -1,0 +1,8 @@
+name: CI/CD
+run-name: ${{ github.actor }} is running the CI/CD pipeline
+on: [push]
+jobs:
+  run-linter:
+    runs-on: ubuntu-latest
+      steps:
+        - run: echo Hi
