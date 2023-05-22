@@ -1,5 +1,5 @@
 name: CI/CD v3
-run-name: CI/CD v2 run
+run-name: CI/CD v3 run
 on: [push, pull_request]
 jobs:
   lint-javascript:
