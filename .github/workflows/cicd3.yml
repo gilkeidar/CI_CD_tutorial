@@ -71,6 +71,7 @@ jobs:
           #template: jaguarjs-jsdoc
           template: clean-jsdoc-theme
           front_page: README.md
+          config_file: config.json
           output_dir: ./docs
       - name: Commit files
         run: |
