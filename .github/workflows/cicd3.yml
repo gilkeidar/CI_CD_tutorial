@@ -45,6 +45,7 @@ jobs:
           VALIDATE_HTML: true
           VALIDATE_CSS: true
           # Don't lint docs folder
+          # See https://github.com/marketplace/actions/super-linter#how-to-use
           FILTER_REGEX_EXCLUDE: .*docs/.*
   create-documentation:
     name: Create JSDocs
