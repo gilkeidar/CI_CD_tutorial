@@ -44,7 +44,7 @@ jobs:
       - name: Install Node.js
         uses: actions/setup-node@v3
       - name: Install Standard Style
-        run: npm install standard -- global
+        run: npm install standard --global
       - name: Run Standard Style
         run: standard
       - name: Fix errors
