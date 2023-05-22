@@ -60,6 +60,7 @@ jobs:
         with:
           source_dir: ./src
           recurse: true
+          template: jaguarjs-jsdoc
           output_dir: ./docs
       - name: Commit files
         run: |
