@@ -4,5 +4,5 @@ on: [push]
 jobs:
   run-linter:
     runs-on: ubuntu-latest
-      steps:
-        - run: echo Hi
+    steps:
+      - run: echo Hi
