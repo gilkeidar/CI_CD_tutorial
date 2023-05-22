@@ -10,5 +10,6 @@ function addTwoNumbers (n, m) {
 
 const banana = 1
 const banaa2 = 2
+const banana3 = 3
 
 console.log(addTwoNumbers(banana, banaa2))
