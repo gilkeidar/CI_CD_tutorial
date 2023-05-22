@@ -44,6 +44,7 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           VALIDATE_HTML: true
           VALIDATE_CSS: true
+          FILTER_REGEX_EXCLUDE: .*docs/.*
   create-documentation:
     name: Create JSDocs
     #needs: lint-javascript
