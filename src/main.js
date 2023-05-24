@@ -41,6 +41,13 @@ function bar () {
   console.log('bar')
 }
 
+/**
+ * Bar 2!
+ */
+function bar2 () {
+  console.log('bar2')
+}
+
 const banana = 1
 const banaa2 = 2
 const banana3 = 3
@@ -53,3 +60,4 @@ sayHello()
 foo()
 bar()
 bar()
+bar2()
