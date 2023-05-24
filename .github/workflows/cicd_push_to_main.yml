@@ -68,6 +68,8 @@ jobs:
           cache: 'npm'
       - name: Run Test Suite
         run: |
+          echo "Making sure Jest is installed..."
+          npm
           echo "Running sanity tests..."
           echo "Running exhaustive tests..."
           npm test
