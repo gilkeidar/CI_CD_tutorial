@@ -1,1 +1,39 @@
 name: v2 CI/CD push to main
+run-name: v2 CI/CD New Release
+on:
+  push:
+    branches:
+      - 'main'
+jobs:
+  lint-javascript:
+    name: Lint JavaScript
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+      - name: Install Standard Style
+        run: npm install standard --global
+      - name: Run Standard Styler linter
+        run: |
+          pwd
+          cd src
+          ls
+          standard
+  proof-html:
+    name: Proof HTML
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+      - name: Proof HTML
+        uses: anishathalye/proof-html@v2
+        with:
+          directory: ./src
