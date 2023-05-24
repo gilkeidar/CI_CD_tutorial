@@ -128,7 +128,11 @@ jobs:
             fetch-depth: 0
         # Add Minimizer Code here
       - name: Minimize Code
-        run: echo "Minimizing code..."
+        uses: docker://devatherock/minify-js:1.0.3
+        with:
+          directory: 'src'      # Optional
+          output: 'dist'  # Optional
+          add_suffix: false     # Optional
   deploy:
     name: Deploy
     needs: run-minimizer
