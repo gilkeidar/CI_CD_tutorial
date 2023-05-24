@@ -66,8 +66,8 @@ jobs:
         run: |
           echo "Running sanity tests..."
           echo "Running exhaustive tests..."
-  create-documentation:
-    name: Create JSDocs
+  create-dev-documentation:
+    name: Create Dev JSDocs
     needs: run-test-suite
     runs-on: ubuntu-latest
 
@@ -91,7 +91,7 @@ jobs:
           template: clean-jsdoc-theme
           front_page: README.md
           config_file: config.json
-          output_dir: ./docs
+          output_dir: ./dev-docs
       - name: Commit files
         run: |
           git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"

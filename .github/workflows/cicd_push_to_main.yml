@@ -92,10 +92,11 @@ jobs:
           front_page: README.md
           config_file: config.json
           output_dir: ./docs
-      - name: Commit files
+      - name: Commit files and remove dev docs
         run: |
           git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
+          git rm dev-docs
           git add docs
           git commit -a -m "Updated Documentation"
       - name: Push changes
