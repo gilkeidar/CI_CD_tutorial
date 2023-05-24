@@ -27,6 +27,13 @@ function sayHello () {
   }
 }
 
+/**
+ * Foo!
+ */
+function foo () {
+  console.log('foo')
+}
+
 const banana = 1
 const banaa2 = 2
 const banana3 = 3
