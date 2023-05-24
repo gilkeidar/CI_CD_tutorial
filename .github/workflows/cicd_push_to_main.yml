@@ -103,8 +103,7 @@ jobs:
         run: |
           git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
-          mkdir -p dev-docs
-          git rm -r dev-docs
+          git rm -r --ignore-unmatch dev-docs
           git add docs
           git commit -a -m "Updated Documentation"
       - name: Push changes
