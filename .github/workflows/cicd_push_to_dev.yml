@@ -1,5 +1,5 @@
-name: CI/CD push to main
-run-name: CI/CD New Release
+name: CI/CD push to dev
+run-name: CI/CD Dev Update (New Feature / Bug Fix)
 on: 
   push:
     branches:

@@ -1,5 +1,5 @@
-name: CI/CD push to main
-run-name: CI/CD New Release
+name: CI/CD pull request or general push
+run-name: CI/CD Pull Request / General Push
 on:
   pull_request:
   push:
