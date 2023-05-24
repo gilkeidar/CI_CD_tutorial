@@ -18,8 +18,6 @@ jobs:
           fetch-depth: 0
       - name: Setup Node.js
         uses: actions/setup-node@v3
-        with:
-          cache: 'npm'
       - name: Install Standard Style
         run: npm install standard --global
       - name: Run Standard Styler linter
