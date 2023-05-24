@@ -48,6 +48,13 @@ function bar2 () {
   console.log('bar2')
 }
 
+/**
+ * Bar 3 - new!
+ */
+function bar3 () {
+  console.log('bar3')
+}
+
 const banana = 1
 const banaa2 = 2
 const banana3 = 3
@@ -61,3 +68,4 @@ foo()
 bar()
 bar()
 bar2()
+bar3()
