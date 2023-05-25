@@ -115,7 +115,7 @@ jobs:
           branch: ${{ github.ref }}
   run-minimizer:
     name: Run Minimizer
-    needs: run-test-suite
+    needs: [run-test-suite, create-documentation]
     runs-on: ubuntu-latest
 
     permissions:
