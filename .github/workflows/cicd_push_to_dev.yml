@@ -49,7 +49,9 @@ jobs:
           VALIDATE_CSS: true
           # Don't lint docs folder
           # See https://github.com/marketplace/actions/super-linter#how-to-use
-          FILTER_REGEX_EXCLUDE: .*docs/.*
+          #FILTER_REGEX_EXCLUDE: .*docs/.*
+          # Only lint src folder
+          FILTER_REGEX_INCLUDE: .*src/.*
   run-test-suite:
     name: Run Test Suite
     needs: [lint-javascript, lint-html-css]
