@@ -55,6 +55,12 @@ function bar3 () {
   console.log('bar3')
 }
 
+/**
+ * Bar 4
+ */
+function bar4 () {
+  console.log('banana')
+}
 const banana = 1
 const banaa2 = 2
 const banana3 = 3
@@ -69,3 +75,4 @@ bar()
 bar()
 bar2()
 bar3()
+bar4()
