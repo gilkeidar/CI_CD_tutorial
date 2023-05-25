@@ -106,6 +106,8 @@ jobs:
         run: |
           git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
+          git pull
+          git rm -r --ignore-unmatch dev-docs
           git add docs
           git commit -a -m "Updated Documentation"
       - name: Push changes
@@ -115,7 +117,8 @@ jobs:
           branch: ${{ github.ref }}
   run-minimizer:
     name: Run Minimizer
-    needs: [run-test-suite, create-documentation]
+    #needs: [run-test-suite, create-documentation]
+    needs: run-test-suite
     runs-on: ubuntu-latest
 
     permissions:
