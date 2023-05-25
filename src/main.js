@@ -69,6 +69,13 @@ function bar5 () {
   console.log('yo')
 }
 
+/**
+ * Bar6 - new function I just added today, 5/25/2023 11:23 AM
+ */
+function bar6 () {
+  console.log('yo')
+}
+
 const banana = 1
 const banaa2 = 2
 const banana3 = 3
@@ -85,3 +92,4 @@ bar2()
 bar3()
 bar4()
 bar5()
+bar6()
